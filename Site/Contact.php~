@@ -55,8 +55,6 @@
 	<fieldset>
 		<legend> Formulario de Contato</legend>
 
-		<imput type="hidden" name="pagina" value="contato">
-
 		<label for="idNome">Nome</label><br>
 		<input type="text" name="nome" id="idNome">
   		<label for="idEmail">Email</label><br>

@@ -32,20 +32,16 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="#">Meu Site</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
               Logged in as <a href="#" class="navbar-link">Username</a>
             </p>
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="Page1.php">Pagina 1</a></li>
+              <li><a href="Page2.php">Pagina 2</a></li>
+	      <li><a href="Aboutme.php">Sobre mim</a></li>
+              <li><a href="Contact.php">Contato</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -54,66 +50,24 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
+
+       <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li class="active"><a href="#">Contato</a></li>
+              <li><a href="#">Sobre mim</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
-            <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
+            <h1>Lorem Impsum</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam metus, porta nec mattis et, placerat ac eros. Quisque dictum elementum sem, eu accumsan augue commodo non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque semper hendrerit sagittis. Proin enim libero, scelerisque in tempus et, tempor nec diam. Etiam euismod lorem nec magna posuere dapibus. Mauris elit augue, vestibulum consectetur lacinia id, faucibus ac lacus. Sed in mi ut lectus sagittis sodales. Sed ut lacus quis ante consequat placerat non ultricies dui. Quisque pellentesque, magna non porttitor placerat, nisl magna interdum nisl, sed aliquam lorem felis in massa. Morbi justo nulla, lobortis ac suscipit a, faucibus quis nunc.
+
+Donec mollis ultricies suscipit. Etiam mauris lacus, congue sit amet consequat et, tempor sed magna. Fusce nec mauris ac lacus cursus sodales eu id nibh. Aliquam erat volutpat. Quisque sit amet mauris vitae enim scelerisque scelerisque. Curabitur neque erat, condimentum in sodales et, sollicitudin eget orci. Aliquam erat volutpat. Sed pretium ante non velit fringilla congue. Pellentesque suscipit leo a sapien bibendum molestie. Nullam eu massa leo, at pharetra ligula. Nunc lacinia nisi ultrices libero iaculis dignissim. Duis erat lectus, commodo at malesuada sollicitudin, tristique quis lacus. Proin gravida feugiat elementum. Duis lacinia, augue nec egestas tristique, est sem fermentum quam, at rutrum velit massa nec sapien. Aliquam malesuada sagittis ligula vel laoreet. Vestibulum ullamcorper lobortis fringilla.
+
+Duis molestie tincidunt auctor. Quisque at euismod odio. Aliquam tempor, enim vitae vestibulum dictum, enim justo vulputate risus, at blandit quam lectus id felis. Proin et ornare ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor justo a diam dignissim accumsan. Suspendisse accumsan erat in augue eleifend ut cursus eros blandit. Praesent condimentum, nunc vel laoreet aliquet, nibh lectus lobortis urna, ut dignissim purus magna vel ligula. Morbi consequat, odio sed venenatis facilisis, eros velit consectetur tortor, non interdum nulla mauris a turpis. In posuere sem eu tortor convallis sed cursus est luctus. </a></p>
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
