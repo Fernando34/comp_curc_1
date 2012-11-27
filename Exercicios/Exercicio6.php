@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <?php
 	function mostrarfuncao ($String) {
 		
@@ -5,4 +7,4 @@
 	}
 ?> 
 	<p>Texto <?php echo (mostrarfuncao($String) )?> <p>
-
+</html>
