@@ -1,0 +1,22 @@
+
+<?php
+			
+			
+			function multiplica($valor1, $valor2){
+
+				$soma = 0;
+
+				for ($i=0; $i < $valor1  ; $i++) { 
+					$soma += $valor2;
+				}	
+				echo $soma;
+			}
+			
+
+			multiplica(8,2);
+
+
+
+?>
+
+

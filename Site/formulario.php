@@ -1,17 +1,44 @@
 <?php
 
-// $_POST - variavel global
+  // $_POST = variavel
 
-// var_dump($_POST); - ver informacoes que vao ser armazenadas
+  // var_dump($_POST);
 
-//Se for envaido um post e a variavel nao é vazia entao mostrar os dados
-if(isset($_POST["pagina"]) && !empty($_POST["pagina"]) && $_POST["pagina"] == "contato"){ 
 
-echo $_POST["nome"]."<br>"; //mostrar dados
-echo $_POST["email"]."<br>";
-echo $_POST["mensagem"];
-}else{
-header("Location: Contact.php");
-}
-//senao redirecionar para a pagina de contato
+// SE for enviado um post e a variavel não é vazia
+// então mostrar os dados
+  if(isset($_POST["pagina"]) && $_POST["pagina"] == "contato" ){
+
+
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $msg = $_POST["mensagem"];
+
+
+    // conectar com o banco
+    mysql_connect("localhost", "root", "root") or die(mysql_error());
+
+    mysql_select_db("teste_php") or die(mysql_error());
+
+    // gerar o SQL para inserir
+
+    $sql = "INSERT INTO contacts (name, email, message, created) VALUES ('{$nome}', '{$email}', '{$msg}', NOW())";
+
+    // echo $sql;
+
+    mysql_query($sql) or die(mysql_error());
+
+    mysql_close();
+
+
+
+  } else {
+// senão
+// redirecionar para a página de contato
+    echo "nao existe pagina";
+    // header("Location: contact.php");
+  }
 ?>
+
+
+

@@ -19,8 +19,8 @@ class Database
 */
     private $db_host = 'localhost'; // Database Host
     private $db_user = 'root'; // Username
-    private $db_pass = 'root'; // Password
-    private $db_name = 'database'; // Database
+    private $db_pass = 'nando'; // Password
+    private $db_name = 'caketeste'; // Database
     /*
 * End edit
 */

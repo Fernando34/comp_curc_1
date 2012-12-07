@@ -76,15 +76,15 @@ default: echo "Cadastro Invalido";
 		
 		<br>
 		<?php 
-			#Letra a
 			$i=25;
 				for($i=0; $i <= 25; $i++) { 
 		 	 		echo $i . "-". "Lactobacilos vivos também possuem sentimentos </br>";  
 				}  
-
-			#Letra b
-			$valor=4;
-				while (0>=$valor){
+		?>
+		
+		<?php
+			$valor=1;
+				while ($valor<=10){
 					echo ($valor . " ");
 					$valor++;
 				}

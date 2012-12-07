@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Pagina 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Fernando Alberto Santin">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+      </head>
+
+  <body>
+
+
+	<form action ="exercicioos.php" method ="POST">
+	<br>
+				<input type="hidden" name= "escondido" value="valor do escondido"/> 
+				<br>
+				Campo: <input type="text" name="campo1"/><br>
+				<br>
+				
+				Senha: <input type="password" name="senha"  maxlength=6 /><br>
+				<br>
+				
+				Nome: <input type="text" name="nome"/><br> 
+				
+				Email: <input type="text" name="email" size="20" value=" " />
+					<?php echo @$_REQUEST["email"]; ?> 
+					
+					<br>
+
+				Mensagem: <textarea name="mensagem" cols=8 rows=3></textarea><br>
+				<br>
+				
+				<br>
+
+				Escolha os numeros:<br> 
+				<input type="checkbox" name="numeros[]" value="10"/> 10<br>
+				<input type="checkbox" name="numeros[]" value="20"/> 20<br>
+				<input type="checkbox" name="numeros[]" value="30"/> 30<br>
+				<input type="checkbox" name="numeros[]" value="40"/> 40<br>
+				<br>
+				Qual seu sistema operacional?<br> 
+				<br><input type="radio" name="sistema" value="Windows"/> Win<br> 
+				<br><input type="radio" name="sistema" value="Windows"/> Linux<br>
+				<br><input type="radio" name="sistema" value="Windows"/> Mac<br> 
+				<br>
+				
+				<B>Qual seu processador?</B><br> 
+				<select name="processador"> <option value="Pentium">Pentium</option><br> 
+				<option value="AMD">AMD</option><br>
+				<option value="Celeron">Celeron</option><br> 
+				</select><br>
+				<br>
+				<br>
+				<button class="btn btn-large btn-primary">Botão grande</button>
+	
+	</fieldset>
+	
+	
+        
+			</form>
+
+
+
+ </body>
+</html>
