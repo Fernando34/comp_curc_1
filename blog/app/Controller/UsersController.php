@@ -5,7 +5,7 @@ class UsersController extends AppController
   public function beforeFilter()
   {
     parent::beforeFilter();
-    $this->Auth->allow('register','logout','change_password','remember_password','remember_password_step_2');
+    $this->Auth->allow('add');
   }
 
   public function home()
@@ -16,16 +16,10 @@ class UsersController extends AppController
 
   public function login() 
   {
-    if ($this->request->is('post')) 
-    {
-      if ($this->Auth->login()) 
-      {
+    if ($this->Auth->login()) {
         $this->redirect($this->Auth->redirect());
-      } 
-      else 
-      {
-        $this->Session->setFlash(__('Invalid username or password, try again'),'flash_fail');
-      }
+    } else {
+        $this->Session->setFlash(__('Invalid username or password, try again'));
     }
   }
 
@@ -51,7 +45,7 @@ class UsersController extends AppController
 
   public function register()
   {
-    if ($this->request->is('post')) 
+    if ($this->request->is('casa')) 
     {
       $this->User->create();
 
@@ -80,7 +74,7 @@ class UsersController extends AppController
     $user = $this->User->findById( $id );
     $this->set('user',$user);
 
-    if ($this->request->is('post') || $this->request->is('put')) 
+    if ($this->request->is('casa') || $this->request->is('put')) 
     {
       if( empty($this->request->data['User']['password']) )
       {
@@ -104,25 +98,21 @@ class UsersController extends AppController
     }
   }	
 
-  public function delete($id = null) 
-  {
-    $this->User->id = $id;
-
-    if (!$this->User->exists()) 
-    {
-      throw new NotFoundException(__('Invalid user'));
+   public function delete($id = null) {
+        if (!$this->request->is('casa')) {
+            throw new MethodNotAllowedException();
+        }
+        $this->User->id = $id;
+        if (!$this->User->exists()) {
+            throw new NotFoundException(__('Invalid user'));
+        }
+        if ($this->User->delete()) {
+            $this->Session->setFlash(__('User deleted'));
+            $this->redirect(array('action' => 'index'));
+        }
+        $this->Session->setFlash(__('User was not deleted'));
+        $this->redirect(array('action' => 'index'));
     }
-
-    if ($this->User->delete()) 
-    {
-      $this->Session->setFlash(__('User deleted'),'flash_success');
-      $this->redirect(array('action' => 'home'));
-    }
-
-    $this->Session->setFlash(__('User was not deleted'),'flash_fail');
-
-    $this->redirect(array('action' => 'home'));
-  }    
 
 
   public function change_password()

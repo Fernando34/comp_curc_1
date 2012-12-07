@@ -37,15 +37,27 @@ class AppController extends Controller
 
 	public function beforeFilter()
 	{
-		$this->Auth->authenticate = array('Form');
+		
+    public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array('controller' => 'casa', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
+			'authorize' => array('Controller') 
+        )
+    );
+	
+	public function isAuthorized($user) {
+    if (isset($user['role']) && $user['role'] === 'admin') {
+        return true; //Admin pode acessar todas actions
+    }
+    return false; // O resto não pode
+}
 
-		$this->Auth->loginRedirect = array('action' => 'home', 'controller' => 'users');
-		$this->Auth->logoutRedirect = array('action' => 'home', 'controller' => 'pages');
-		$this->Auth->authError = 'You are not allowed to see that.';
-
-		# To enable portuguese language as main
-		Configure::write('Config.language', 'por');
-	}	
+    function beforeFilter() {
+        $this->Auth->allow('index', 'view');
+    }
+    //...
 }
 
 ?>
