@@ -1,0 +1,3 @@
+<h1>Adicionando Postagens</h1>
+<?php 
+	echo $this->Form->create('Post')
