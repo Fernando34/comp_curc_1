@@ -5,7 +5,7 @@ class UsersController extends AppController
   public function beforeFilter()
   {
     parent::beforeFilter();
-    $this->Auth->allow('add');
+    $this->Auth->allow('register','logout','change_password','remember_password','remember_password_step_2');
   }
 
   public function home()
@@ -215,7 +215,7 @@ class UsersController extends AppController
 
     if( $user['User']['hash_change_password'] != $hash || empty($user))
     {
-      throw new NotFoundException(__('Link inválido'));
+      throw new NotFoundException(__('Link invï¿½lido'));
     }
 
     # Sends the hash to the form to check before changing the password
